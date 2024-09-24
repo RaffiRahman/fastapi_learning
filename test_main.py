@@ -16,7 +16,7 @@ def test_auth_error():
     message = respose.json().get("detail")[0].get("msg")
     assert message == "Field required"
 
-def auth_success():
+def test_auth_success():
     respose = client.post("/token",
                           data={"username": "cat", "password": "cat"}
                           )

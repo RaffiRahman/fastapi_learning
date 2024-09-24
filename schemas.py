@@ -42,3 +42,8 @@ class ArticleDisplay(BaseModel):
     user: User
     class config():
         orm_mode = True
+
+class ProductBase(BaseModel):
+    title: str
+    description: str
+    price: float
